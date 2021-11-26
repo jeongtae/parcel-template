@@ -1,0 +1,14 @@
+{
+  "modules": true,
+  "plugins": {
+    "postcss-import": {},
+    "postcss-modules": {
+      "generateScopedName": "_[local]__[name]-[hash:base62:6]",
+      "localsConvention": "dashesOnly"
+    },
+    "postcss-preset-env": {
+      "stage": 2,
+      "autoprefixer": { "grid": "autoplace" }
+    }
+  }
+}

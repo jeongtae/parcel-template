@@ -1,0 +1,32 @@
+{
+  "name": "parcel-template",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "source": "src/index.html",
+  "browserslist": "> 1%, IE 11, not dead",
+  "targets": {
+    "default": {
+      "distDir": "dist",
+      "publicUrl": "/",
+      "scopeHoist": true,
+      "optimize": true,
+      "sourceMap": true
+    }
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1",
+    "postcss": "^8.4.3",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^7.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "core-js": "^3.19.1"
+  }
+}
