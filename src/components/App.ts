@@ -1,11 +1,10 @@
 import * as classes from "./App.css";
 
 export default class App {
-  #$title;
+  #$title: HTMLHeadingElement;
 
-  constructor(target) {
-    target.innerHTML = "";
-    this.$target = target;
+  constructor(public $target: HTMLElement) {
+    $target.innerHTML = "";
     this.#$title = document.createElement("h1");
     this.#$title.className = classes.niceTitle;
     this.$target.append(this.#$title);

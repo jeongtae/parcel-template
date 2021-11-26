@@ -3,4 +3,4 @@ import "./global.css";
 
 import App from "~/src/components/App";
 
-new App(document.getElementById("root"));
+new App(document.getElementById("root")!);
